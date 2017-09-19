@@ -20,36 +20,37 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Controller
 public class ChatController {
-	
+
 	@Autowired
 	ChatService chatService;
-	
+
 	@MessageMapping("/chat")
 	@SendTo("/topic/messages")
 	public OutputMessage send(Message message) throws Exception {
-	    
-	    return new OutputMessage(message.getFrom(), message.getText(), new Timestamp(System.currentTimeMillis()));
-	    
+
+		return new OutputMessage(message.getFrom(), message.getText(), new Timestamp(System.currentTimeMillis()));
+
 	}
-	
-    @RequestMapping(value = "/sendMessageToUser", method = RequestMethod.POST)
-    @ResponseBody public ChatMessage sayHelloAgain(@RequestBody final ChatMessage message) {
-        
-    	ObjectMapper objectMapper = new ObjectMapper();
-    	
+
+	@RequestMapping(value = "/sendMessageToUser", method = RequestMethod.POST)
+	@ResponseBody
+	public ChatMessage sayHelloAgain(@RequestBody final ChatMessage message) {
+
+		ObjectMapper objectMapper = new ObjectMapper();
+
 		try {
-			
+
 			String messageToJsonString = objectMapper.writeValueAsString(message);
-    	
-	    	chatService.publish(message.getToChannels(), messageToJsonString);
-	    	
-	    	return message;
-	    	
+
+			chatService.publish(message.getToChannels(), messageToJsonString);
+
+			return message;
+
 		} catch (JsonProcessingException e) {
-			
+
 			e.printStackTrace();
 			return message;
-			
+
 		}
-    }
+	}
 }
