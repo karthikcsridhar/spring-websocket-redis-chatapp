@@ -1,0 +1,13 @@
+/Users/karthik/Documents/workspace-sts-3.8.4.RELEASE/lettuceexample/src/main/java/com/csk/lettuceexample/config/AppDefaults.java
+/Users/karthik/Documents/workspace-sts-3.8.4.RELEASE/lettuceexample/src/main/java/com/csk/lettuceexample/config/WebSocketConfig.java
+/Users/karthik/Documents/workspace-sts-3.8.4.RELEASE/lettuceexample/src/main/java/com/csk/lettuceexample/api/ChatController.java
+/Users/karthik/Documents/workspace-sts-3.8.4.RELEASE/lettuceexample/src/main/java/com/csk/lettuceexample/model/ChatMessage.java
+/Users/karthik/Documents/workspace-sts-3.8.4.RELEASE/lettuceexample/src/main/java/com/csk/lettuceexample/customimpl/PresenceChannelInterceptor.java
+/Users/karthik/Documents/workspace-sts-3.8.4.RELEASE/lettuceexample/src/main/java/com/csk/lettuceexample/customimpl/LettuceRedisPubSubListener.java
+/Users/karthik/Documents/workspace-sts-3.8.4.RELEASE/lettuceexample/src/main/java/com/csk/lettuceexample/model/Message.java
+/Users/karthik/Documents/workspace-sts-3.8.4.RELEASE/lettuceexample/src/main/java/com/csk/lettuceexample/model/OutputMessage.java
+/Users/karthik/Documents/workspace-sts-3.8.4.RELEASE/lettuceexample/src/main/java/com/csk/lettuceexample/service/ChatService.java
+/Users/karthik/Documents/workspace-sts-3.8.4.RELEASE/lettuceexample/src/main/java/com/csk/lettuceexample/config/AppConfig.java
+/Users/karthik/Documents/workspace-sts-3.8.4.RELEASE/lettuceexample/src/main/java/com/csk/lettuceexample/api/HelloWorldController.java
+/Users/karthik/Documents/workspace-sts-3.8.4.RELEASE/lettuceexample/src/main/java/com/csk/lettuceexample/service/LettuceRedisService.java
+/Users/karthik/Documents/workspace-sts-3.8.4.RELEASE/lettuceexample/src/main/java/com/csk/lettuceexample/config/AppInitializer.java
